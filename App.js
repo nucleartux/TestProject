@@ -45,7 +45,7 @@ function HomeScreen({navigation}) {
 function ListScreen() {
   return (
     <View style={{flex: 1}}>
-      <AvoidSoftInputView style={{flex: 1}}>
+      <AvoidSoftInputView style={{flex: 1}} avoidOffset={16}>
         <FlatList
           data={[1, 2, 3, 4]}
           renderItem={({item}) => (
